@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+  <h3 class="alert alert-success">CONGRATULATIONS... !!!! you are shortlisted</h3>
+  <form method="post">{% csrf_token%}
+    <div class="form-group">
+      <h3>{{ form.as_p }}</h3>
+        <label>subject</label>
+        <input type="text" placeholder="type your subject here">
+        <a href="" class="btn btn-primary">send</a>
+    </div>
+  </form>
+</center>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html,
+body {
+  height: 100%;
+
+
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.container h1{
+	color: teal;
+}
+
+.main-heading {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  padding-bottom: 1.5rem !important;
+  padding-top: 0.2rem !important;
+  text-align: center !important;
+}
+
+    </style>
+  <script src="https://kit.fontawesome.com/e0133b5663.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<main class="w-100 m-auto">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h1 class="main-heading"><b>Register Your Account</b></h1>
+            <form method="POST"> {% csrf_token %}
+              <div class="row mb-3">
+                <label for="email" class="col-md-4 col-form-label text-md-end">First Name</label>
+                <div class="col-md-6">
+                  <input id="text" type="name" class="form-control " name="first_name" value="" required autocomplete="name" autofocus>
+                </div>
+              </div>
+                <div class="row mb-3">
+                <label for="email" class="col-md-4 col-form-label text-md-end">Last Name</label>
+                <div class="col-md-6">
+                  <input id="textt" type="name" class="form-control " name="last_name" value="" required autocomplete="name" autofocus>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="email" class="col-md-4 col-form-label text-md-end">Email Address</label>
+                <div class="col-md-6">
+                  <input id="email" type="email" class="form-control " name="email" value="" required autocomplete="email" autofocus>
+                </div>
+              </div>
+
+
+              <div class="row mb-3">
+                <label for="phone" class="col-md-4 col-form-label text-md-end">User Name</label>
+                <div class="col-md-6">
+                  <input id="phone" type="text" class="form-control " name="username" value="" required autocomplete="phone" autofocus>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="password" class="col-md-4 col-form-label text-md-end">Password</label>
+                <div class="col-md-6">
+                  <input id="password" type="password" class="form-control " name="password" required autocomplete="current-password">
+                </div>
+              </div>
+
+<!--              <div class="row mb-3">-->
+<!--                <label for="confirm_password" class="col-md-4 col-form-label text-md-end">Confirm Password</label>-->
+<!--                <div class="col-md-6">-->
+<!--                  <input id="confirm_password" type="password" class="form-control " name="cpassword" required autocomplete="current-password">-->
+<!--                </div>-->
+<!--              </div>-->
+
+
+
+              <div class="row mb-0 mt-4">
+                <div class="col-md-8 offset-md-3">
+                  <button type="submit" class="btn btn-primary py-1 px-4" style="margin-left:100px;">
+                    Register
+                  </button>
+
+
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>

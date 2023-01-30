@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: teal;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.container{
+	margin: 100px;
+	background-color: white;
+
+	padding: 40px;
+}
+
+.container h2{
+	color: teal;
+}
+
+input[type="text"], input[type="password"]{
+
+	width: 100%;
+	box-sizing: border-box;
+	margin: 15px 0px;
+	padding: 12px 20px;
+
+}
+
+button{
+
+	margin: 15px 0px;
+	padding: 20px;
+	font-size: 18px;
+	width: 100%;
+	background-color: teal;
+	color: whitesmoke;
+	border: none;
+
+}
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">{% csrf_token %}
+<div class="container">
+		<div class="form">
+            <h2><center>Login To Your Account</center></h2>
+			<form>
+				<input type="text" name="email" placeholder="Email Address" />
+				<input type="password" name="password" placeholder="Password" />
+
+				<button>Login</button>
+                <center>
+                Don't have an Account?
+                <a href="http://127.0.0.1:8000/jobapp/register/">Register Now !</a>
+                    </center>
+			</form>
+		</div>
+	</div>
+</form>
+</body>
+</html>

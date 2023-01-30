@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+  <h3 class="alert alert-success">YOUR APPLICATION SENT SUCCESFULLY</h3>
+  <form method="post">{% csrf_token%}
+    <div class="form-group">
+      <h3>{{ form.as_p }}</h3>
+    </div>
+  </form>
+</center>
+</body>
+</html>
